@@ -39,4 +39,4 @@ Run the [`DDPG_Continuous_Control.ipynb`](https://github.com/doctorcorral/DRLND-
 
 Once trained the model weights will be saved in the same directory in the files `checkpoint_actor.pth` and `checkpint_critic.pth`.
 
-The model weights are used by the [`Trained Agent.ipynb` ](https://github.com/hortovanyi/DRLND-Continuous-Control/blob/master/Trained%20Agent.ipynb) notebook against the simulator. 
+The model weights are used by the [`run_agent.ipynb` ](https://github.com/doctorcorral/DRLND-p2-continuous/blob/master/run_agent.ipynb) notebook against the simulator. 
