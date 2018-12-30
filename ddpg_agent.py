@@ -11,14 +11,14 @@ import torch.optim as optim
 
 BUFFER_SIZE = int(1e6)  # replay buffer size
 BATCH_SIZE = 128         # minibatch size
-GAMMA = 0.99            # discount factor
+GAMMA = 0.97            # discount factor
 TAU = 1e-3              # for soft update of target parameters
 LR_ACTOR = 1e-4         # learning rate of the actor
 LR_CRITIC = 1e-4        # learning rate of the critic
 WEIGHT_DECAY = 0.0      # L2 weight decay
 
-N_LEARN_UPDATES = 10     # number of learning updates
-N_TIME_STEPS = 20       # every n time step do update
+N_LEARN_UPDATES = 8                                          # number of learning updates
+N_TIME_STEPS = 21      # every n time step do update
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -98,7 +98,7 @@ class Agent():
         self.actor_local.train()
         if add_noise:
             action += self.noise.sample()
-        return np.clip(action, -1, 1)
+        return np.clip(action, -0.93, 0.93)
 
     def reset(self):
         self.noise.reset()
