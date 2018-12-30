@@ -39,7 +39,7 @@ Run the [`DDPG_Continuous_Control.ipynb`](https://github.com/doctorcorral/DRLND-
 
 Use `ddpg` function to perform the training. This function returns a dictionary containing relevant internal variables that can be fed again to this function to continue training where it was left. Play around with this, change hyper parameters in between training runs to train your own intuition.
 
-This problem is said to be solved when you hit a `30` score (see an example [Reward Plot](https://github.com/doctorcorral/DRLND-p2-continuous/blob/master/output/result.png?raw=true)).
+This problem is said to be solved when you hit a `30` score (see an example [Reward Plot](https://raw.githubusercontent.com/doctorcorral/DRLND-p2-continuous/master/images/result.png)).
 
 Once trained the model weights will be saved in the same directory in the files `checkpoint_actor.pth` and `checkpint_critic.pth`.
 

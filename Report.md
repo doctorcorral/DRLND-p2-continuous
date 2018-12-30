@@ -64,7 +64,7 @@ This training was performed gradually, changing manually some hyper parameters l
 I did this way so I could get an intuition about the impact of making such changes. Nevertheless it took more days than expected (as I was closely (slowly) following the training)
 
 Checkout the reward plot
- ![Reward Plot](https://github.com/doctorcorral/DRLND-p2-continuous/blob/master/output/result.png?raw=true)
+ ![Reward Plot](https://raw.githubusercontent.com/doctorcorral/DRLND-p2-continuous/master/images/result.png)
 
 
 ## Ideas for Future Work
